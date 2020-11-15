@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report6" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="55bc5e79-385f-4260-bda9-0447e00a228f">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="markTable" uuid="d04bf5b7-bb45-4d78-be44-361857ba63cb">
+		<parameter name="table1" class="net.sf.jasperreports.engine.JREmptyDataSource"/>
+		<field name="chinese" class="java.lang.String"/>
+		<field name="math" class="java.lang.String"/>
+		<field name="english" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="markTableDataList" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="83" y="40" width="12" height="55" uuid="bf5896d6-5583-478c-8948-45f86fef0a29"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[考察情况]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="29" width="10" height="66" uuid="2025599c-4d84-4457-9210-ed99f9dc8d6f"/>
+				<text><![CDATA[科学文化]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="29" width="100" height="11" uuid="155c664b-207d-453e-b005-793754ecc136"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[学科]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="40" width="88" height="17" uuid="dfb6fb11-ef7a-4945-af77-63cc3983ac70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[平时]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="75" width="88" height="20" uuid="3e2d6ac8-d983-4cac-b6ce-b99587a6c534"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[期末]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="57" width="88" height="18" uuid="ae547150-46ba-4fb3-8522-3cc7df5bcccb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[期中]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 3" style="table 3" x="183" y="29" width="300" height="66" uuid="346b047f-2351-40c9-ba62-0115ce2a909e"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="markTable" uuid="54b9377e-9653-43eb-87df-e199b214a901">
+						<datasetParameter name="table1">
+							<datasetParameterExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{markTableDataList})]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{markTableDataList})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="332" uuid="58f49513-f4b3-4cc0-9b9e-1d080d1752b0">
+						<jr:columnGroup width="332" uuid="679047bf-e9bd-4b02-b432-b52479f3bccd">
+							<jr:column width="96" uuid="e31cdb4e-598d-4479-a85d-6d2641481838">
+								<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+									<staticText>
+										<reportElement x="0" y="0" width="96" height="30" uuid="bfa1632c-8cd5-4824-948d-6b125ebcb5f5"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle"/>
+										<text><![CDATA[语文]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="table 3_TD" height="36" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="96" height="36" uuid="20262e57-e3fb-40fb-aa0f-cd490042be3e"/>
+										<textFieldExpression><![CDATA[$F{chinese}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="117" uuid="a5ecd3c0-a622-4f2f-ae89-cffd9803c119">
+								<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+									<staticText>
+										<reportElement x="0" y="0" width="117" height="30" uuid="f35fc5c0-d35e-487b-bdd7-87a398bc335c"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle"/>
+										<text><![CDATA[数学]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="table 3_TD" height="36" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="117" height="36" uuid="db21aa91-e07a-42f7-b1bf-44b003f3f19a"/>
+										<textFieldExpression><![CDATA[$F{math}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="119" uuid="71b74ed1-35d1-4bd3-ba8b-59739c16936b">
+								<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+									<staticText>
+										<reportElement x="0" y="0" width="119" height="30" uuid="b9751529-40ff-450d-ab65-a6df0f69a995"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle"/>
+										<text><![CDATA[英语]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="table 3_TD" height="36" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="119" height="36" uuid="6cb23153-f319-4102-8cad-e2233fd6b392"/>
+										<textFieldExpression><![CDATA[$F{english}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="67" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="45" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="146" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -218,7 +218,7 @@ public class JasperHelper {
     /**
      * 按照类型导出不同格式文件
      * 
-     * @param datas
+//     * @param datas
      *            数据
      * @param type
      *            文件类型
@@ -226,7 +226,7 @@ public class JasperHelper {
      *            jasper文件的来源
      * @param request
      * @param response
-     * @param defaultFilename默认的导出文件的名称
+//     * @param defaultFilename默认的导出文件的名称
      */
     public static void export(String type, String defaultFilename, File is,
             HttpServletRequest request, HttpServletResponse response,
@@ -279,10 +279,10 @@ public class JasperHelper {
     /**
      * 输出html静态页面，必须注入request和response
      * 
-     * @param jasperPath
-     * @param params
-     * @param sourceList
-     * @param imageUrl
+//     * @param jasperPath
+//     * @param params
+//     * @param sourceList
+//     * @param imageUrl
      *            报表文件使用的图片路径，比如 ../servlets/image?image=
      * @throws JRException
      * @throws IOException

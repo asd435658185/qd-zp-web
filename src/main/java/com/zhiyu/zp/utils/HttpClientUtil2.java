@@ -211,72 +211,72 @@ public class HttpClientUtil2
 
     public static String get(String url, Map params)
     {
-        CloseableHttpClient httpClient;
-        HttpGet httpGet;
-        List nvps;
-        CloseableHttpResponse httpResponse;
-        httpClient = getHttpClient();
-        httpGet = new HttpGet(url);
-        httpGet.setHeader("Accept-Charset", "utf-8");
-        httpGet.setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-        nvps = new ArrayList();
-        java.util.Map.Entry entry;
-        for(Iterator iterator = params.entrySet().iterator(); iterator.hasNext(); nvps.add(new BasicNameValuePair((String)entry.getKey(), (String)entry.getValue())))
-            entry = (java.util.Map.Entry)iterator.next();
-
-        httpResponse = null;
-        String s;
-        httpGet.setURI(new URI((new StringBuilder(String.valueOf(httpGet.getURI().toString()))).append("?").append(EntityUtils.toString(new UrlEncodedFormEntity(nvps))).toString()));
-        httpResponse = httpClient.execute(httpGet);
-        if(httpResponse.getStatusLine().getStatusCode() != 200)
-            break MISSING_BLOCK_LABEL_357;
-        HttpEntity httpEntity = httpResponse.getEntity();
-        s = EntityUtils.toString(httpEntity);
-        try
-        {
-            if(httpResponse != null)
-                httpResponse.close();
-        }
-        catch(Exception e)
-        {
-            logger.error(e.getMessage());
-            e.printStackTrace(System.out);
-        }
-        return s;
-        try
-        {
-            if(httpResponse != null)
-                httpResponse.close();
-        }
-        catch(Exception e)
-        {
-            logger.error(e.getMessage());
-            e.printStackTrace(System.out);
-        }
-        break MISSING_BLOCK_LABEL_411;
-        Exception exception;
-        try
-        {
-            if(httpResponse != null)
-                httpResponse.close();
-        }
-        catch(Exception e)
-        {
-            logger.error(e.getMessage());
-            e.printStackTrace(System.out);
-        }
-        throw exception;
-        try
-        {
-            if(httpResponse != null)
-                httpResponse.close();
-        }
-        catch(Exception e)
-        {
-            logger.error(e.getMessage());
-            e.printStackTrace(System.out);
-        }
-        break MISSING_BLOCK_LABEL_411;
+//        CloseableHttpClient httpClient;
+//        HttpGet httpGet;
+//        List nvps;
+//        CloseableHttpResponse httpResponse;
+//        httpClient = getHttpClient();
+//        httpGet = new HttpGet(url);
+//        httpGet.setHeader("Accept-Charset", "utf-8");
+//        httpGet.setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+//        nvps = new ArrayList();
+//        java.util.Map.Entry entry;
+//        for(Iterator iterator = params.entrySet().iterator(); iterator.hasNext(); nvps.add(new BasicNameValuePair((String)entry.getKey(), (String)entry.getValue())))
+//            entry = (java.util.Map.Entry)iterator.next();
+//
+//        httpResponse = null;
+//        String s;
+//        httpGet.setURI(new URI((new StringBuilder(String.valueOf(httpGet.getURI().toString()))).append("?").append(EntityUtils.toString(new UrlEncodedFormEntity(nvps))).toString()));
+//        httpResponse = httpClient.execute(httpGet);
+//        if(httpResponse.getStatusLine().getStatusCode() != 200){}
+////            break MISSING_BLOCK_LABEL_357;
+//        HttpEntity httpEntity = httpResponse.getEntity();
+//        s = EntityUtils.toString(httpEntity);
+//        try
+//        {
+//            if(httpResponse != null)
+//                httpResponse.close();
+//        }
+//        catch(Exception e)
+//        {
+//            logger.error(e.getMessage());
+//            e.printStackTrace(System.out);
+//        }
+//        return s;
+//        try
+//        {
+//            if(httpResponse != null)
+//                httpResponse.close();
+//        }
+//        catch(Exception e)
+//        {
+//            logger.error(e.getMessage());
+//            e.printStackTrace(System.out);
+//        }
+////        break MISSING_BLOCK_LABEL_411;
+//        Exception exception;
+//        try
+//        {
+//            if(httpResponse != null)
+//                httpResponse.close();
+//        }
+//        catch(Exception e)
+//        {
+//            logger.error(e.getMessage());
+//            e.printStackTrace(System.out);
+//        }
+//        throw exception;
+//        try
+//        {
+//            if(httpResponse != null)
+//                httpResponse.close();
+//        }
+//        catch(Exception e)
+//        {
+//            logger.error(e.getMessage());
+//            e.printStackTrace(System.out);
+//        }
+//        break MISSING_BLOCK_LABEL_411;
         return "";
     }
 
@@ -317,7 +317,7 @@ public class HttpClientUtil2
                     bos.write(inByte);
                 bos.flush();
             }
-            break MISSING_BLOCK_LABEL_431;
+//            break MISSING_BLOCK_LABEL_431;
         }
         catch(Exception e)
         {
@@ -339,7 +339,7 @@ public class HttpClientUtil2
             logger.error(e.getMessage());
             e.printStackTrace(System.out);
         }
-        break MISSING_BLOCK_LABEL_489;
+//        break MISSING_BLOCK_LABEL_489;
         try
         {
             if(httpResponse != null)
